@@ -107,7 +107,12 @@ function colorForIcon(icon, simpleIcon) {
 }
 
 function applySvgSize(svg) {
-  return svg.replace('<svg ', '<svg width="144" height="144" ');
+  return svg.replace(/<svg\b([^>]*)>/i, (_match, attrs) => {
+    const cleanedAttrs = attrs
+      .replace(/\swidth="[^"]*"/gi, '')
+      .replace(/\sheight="[^"]*"/gi, '');
+    return `<svg width="144" height="144"${cleanedAttrs}>`;
+  });
 }
 
 function applySvgColor(svg, color) {

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
+import * as simpleIcons from 'simple-icons';
 
 const owner = process.env.GITHUB_REPOSITORY?.split('/')[0] ?? '0x910nni';
 const repo = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'tool-icons';
@@ -10,6 +11,12 @@ const rawBase = process.env.RAW_BASE ?? `https://raw.githubusercontent.com/${own
 const iconsetPath = 'iconset.json';
 const sourcePath = 'source-icons.json';
 const outputDir = 'icons';
+
+const iconsBySlug = new Map(
+  Object.values(simpleIcons)
+    .filter((icon) => icon && typeof icon === 'object' && icon.slug && icon.svg)
+    .map((icon) => [icon.slug, icon]),
+);
 
 function slugFromUrl(url) {
   const match = String(url).match(/cdn\.simpleicons\.org\/([^/?#]+)/);
@@ -50,16 +57,18 @@ async function loadSourceIcons() {
   return uniqueIcons(icons);
 }
 
-async function fetchSvg(slug) {
-  const response = await fetch(`https://cdn.simpleicons.org/${slug}?size=144`);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${slug}: ${response.status} ${response.statusText}`);
+function svgForSlug(slug) {
+  const icon = iconsBySlug.get(slug);
+  if (!icon) {
+    throw new Error(`Missing simple-icons entry for slug: ${slug}`);
   }
-  return Buffer.from(await response.arrayBuffer());
+
+  const color = icon.hex ? `#${icon.hex}` : '#000000';
+  return icon.svg.replace('<svg ', `<svg fill="${color}" width="144" height="144" `);
 }
 
 async function buildIcon(icon) {
-  const svg = await fetchSvg(icon.slug);
+  const svg = Buffer.from(svgForSlug(icon.slug));
   const outputPath = path.join(outputDir, `${icon.slug}.png`);
   await sharp(svg, { density: 384 })
     .resize(144, 144, {
@@ -89,7 +98,7 @@ for (const icon of sourceIcons) {
 await fs.writeFile(sourcePath, `${JSON.stringify({ icons: sourceIcons }, null, 2)}\n`);
 await fs.writeFile(iconsetPath, `${JSON.stringify({
   name: 'Pod042 Network Service Icons',
-  description: 'Network-service oriented brand icons for Surge policy groups. PNG icons generated from Simple Icons CDN.',
+  description: 'Network-service oriented brand icons for Surge policy groups. PNG icons generated from Simple Icons.',
   icons: builtIcons,
 }, null, 2)}\n`);
 

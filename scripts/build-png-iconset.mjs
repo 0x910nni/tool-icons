@@ -10,6 +10,7 @@ const rawBase = process.env.RAW_BASE ?? `https://raw.githubusercontent.com/${own
 
 const iconsetPath = 'iconset.json';
 const sourcePath = 'source-icons.json';
+const extraSourcePath = 'source-icons-extra.json';
 const outputDir = 'icons';
 
 const iconsBySlug = new Map(
@@ -23,63 +24,160 @@ function slugFromUrl(url) {
   return match?.[1] ?? null;
 }
 
+function sanitizeFileName(value) {
+  return String(value)
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function fileBaseForIcon(icon) {
+  const raw = icon.file ?? icon.slug ?? icon.name;
+  const fileBase = sanitizeFileName(raw);
+  if (!fileBase) {
+    throw new Error(`Invalid file name for icon: ${JSON.stringify(icon)}`);
+  }
+  return fileBase;
+}
+
 function uniqueIcons(icons) {
   const seen = new Set();
   const result = [];
   for (const icon of icons) {
-    if (!icon.slug || seen.has(icon.slug)) continue;
-    seen.add(icon.slug);
-    result.push(icon);
+    const normalized = normalizeIcon(icon);
+    const key = fileBaseForIcon(normalized);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    result.push(normalized);
   }
   return result;
+}
+
+function normalizeIcon(icon) {
+  return {
+    name: icon.name,
+    slug: icon.slug,
+    file: icon.file,
+    color: icon.color,
+    svgPath: icon.svgPath,
+    sourceUrl: icon.sourceUrl,
+  };
 }
 
 async function readJson(file) {
   return JSON.parse(await fs.readFile(file, 'utf8'));
 }
 
-async function loadSourceIcons() {
+async function readOptionalSourceFile(file) {
   try {
-    const source = await readJson(sourcePath);
-    return uniqueIcons(source.icons.map((icon) => ({
-      name: icon.name,
-      slug: icon.slug,
-    })));
+    const source = await readJson(file);
+    return source.icons.map(normalizeIcon);
   } catch (error) {
-    if (error.code !== 'ENOENT') throw error;
+    if (error.code === 'ENOENT') return [];
+    throw error;
   }
+}
+
+async function loadCoreIcons() {
+  const sourceIcons = await readOptionalSourceFile(sourcePath);
+  if (sourceIcons.length > 0) return sourceIcons;
 
   const iconset = await readJson(iconsetPath);
-  const icons = iconset.icons.map((icon) => ({
+  return iconset.icons.map((icon) => ({
     name: icon.name,
     slug: slugFromUrl(icon.url),
   }));
-  return uniqueIcons(icons);
 }
 
-function svgForSlug(slug) {
-  const icon = iconsBySlug.get(slug);
-  if (!icon) {
-    throw new Error(`Missing simple-icons entry for slug: ${slug}`);
+async function loadSourceIcons() {
+  const coreIcons = await loadCoreIcons();
+  const extraIcons = await readOptionalSourceFile(extraSourcePath);
+  return uniqueIcons([...coreIcons, ...extraIcons]);
+}
+
+function colorForIcon(icon, simpleIcon) {
+  if (!icon.color || icon.color === 'brand') {
+    return simpleIcon?.hex ? `#${simpleIcon.hex}` : null;
   }
 
-  const color = icon.hex ? `#${icon.hex}` : '#000000';
-  return icon.svg.replace('<svg ', `<svg fill="${color}" width="144" height="144" `);
+  if (icon.color === 'white') return '#ffffff';
+  if (icon.color === 'black') return '#000000';
+  return icon.color;
+}
+
+function applySvgSize(svg) {
+  return svg.replace('<svg ', '<svg width="144" height="144" ');
+}
+
+function applySvgColor(svg, color) {
+  if (!color) return svg;
+  if (svg.includes('currentColor')) {
+    return svg.replaceAll('currentColor', color);
+  }
+  if (/^<svg\s/i.test(svg) && !/^<svg\s[^>]*\bfill=/i.test(svg)) {
+    return svg.replace('<svg ', `<svg fill="${color}" `);
+  }
+  return svg;
+}
+
+async function fetchText(url) {
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': 'pod042-tool-icons-builder/1.0',
+    },
+  });
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+  }
+  return response.text();
+}
+
+async function svgForIcon(icon) {
+  if (icon.svgPath) {
+    const svg = await fs.readFile(icon.svgPath, 'utf8');
+    return { svg, color: colorForIcon(icon, null) };
+  }
+
+  if (icon.sourceUrl) {
+    const svg = await fetchText(icon.sourceUrl);
+    return { svg, color: colorForIcon(icon, null) };
+  }
+
+  const simpleIcon = iconsBySlug.get(icon.slug);
+  if (!simpleIcon) {
+    throw new Error(`Missing simple-icons entry for slug: ${icon.slug}`);
+  }
+
+  return {
+    svg: simpleIcon.svg,
+    color: colorForIcon(icon, simpleIcon),
+  };
 }
 
 async function buildIcon(icon) {
-  const svg = Buffer.from(svgForSlug(icon.slug));
-  const outputPath = path.join(outputDir, `${icon.slug}.png`);
-  await sharp(svg, { density: 384 })
+  const { svg, color } = await svgForIcon(icon);
+  const fileBase = fileBaseForIcon(icon);
+  const outputPath = path.join(outputDir, `${fileBase}.png`);
+  const preparedSvg = applySvgSize(applySvgColor(svg, color));
+
+  let image = sharp(Buffer.from(preparedSvg), { density: 384 })
     .resize(144, 144, {
       fit: 'contain',
       background: { r: 0, g: 0, b: 0, alpha: 0 },
-    })
+    });
+
+  if (color && !preparedSvg.includes(color)) {
+    image = image.tint(color);
+  }
+
+  await image
     .png({ compressionLevel: 9, adaptiveFiltering: true })
     .toFile(outputPath);
+
   return {
     name: icon.name,
-    url: `${rawBase}/icons/${icon.slug}.png`,
+    url: `${rawBase}/icons/${fileBase}.png`,
   };
 }
 
@@ -95,10 +193,9 @@ for (const icon of sourceIcons) {
   builtIcons.push(await buildIcon(icon));
 }
 
-await fs.writeFile(sourcePath, `${JSON.stringify({ icons: sourceIcons }, null, 2)}\n`);
 await fs.writeFile(iconsetPath, `${JSON.stringify({
   name: 'Pod042 Network Service Icons',
-  description: 'Network-service oriented brand icons for Surge policy groups. PNG icons generated from Simple Icons.',
+  description: 'Network-service oriented brand icons for Surge policy groups. PNG icons generated from Simple Icons and curated custom SVG sources.',
   icons: builtIcons,
 }, null, 2)}\n`);
 

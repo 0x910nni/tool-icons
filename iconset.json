@@ -425,6 +425,54 @@
     {
       "name": "Jira",
       "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/jira.png"
+    },
+    {
+      "name": "ChatGPT White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/chatgpt-white.png"
+    },
+    {
+      "name": "Grok White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/grok-white.png"
+    },
+    {
+      "name": "TradingView White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/tradingview-white.png"
+    },
+    {
+      "name": "Claude White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/claude-white.png"
+    },
+    {
+      "name": "Steam White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/steam-white.png"
+    },
+    {
+      "name": "Netflix White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/netflix-white.png"
+    },
+    {
+      "name": "Starlink White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/starlink-white.png"
+    },
+    {
+      "name": "X White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/x-white.png"
+    },
+    {
+      "name": "HBO White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/hbo-white.png"
+    },
+    {
+      "name": "MetaMask",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/metamask.png"
+    },
+    {
+      "name": "Meta",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/meta.png"
+    },
+    {
+      "name": "Gemini",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/gemini.png"
     }
   ]
 }

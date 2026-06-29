@@ -7,6 +7,7 @@ on:
     paths:
       - iconset.json
       - source-icons.json
+      - source-icons-extra.json
       - scripts/build-png-iconset.mjs
       - .github/workflows/build-png-iconset.yml
   workflow_dispatch:
@@ -36,12 +37,12 @@ jobs:
 
       - name: Commit generated icons
         run: |
-          if [ -z "$(git status --porcelain icons iconset.json source-icons.json)" ]; then
+          if [ -z "$(git status --porcelain icons iconset.json source-icons.json source-icons-extra.json)" ]; then
             echo "No generated changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add icons iconset.json source-icons.json
+          git add icons iconset.json source-icons.json source-icons-extra.json
           git commit -m "Build PNG Surge icon set"
           git push

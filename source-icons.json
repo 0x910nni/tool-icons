@@ -1,0 +1,428 @@
+{
+  "icons": [
+    {
+      "name": "Google",
+      "slug": "google"
+    },
+    {
+      "name": "Google Cloud",
+      "slug": "googlecloud"
+    },
+    {
+      "name": "Google Drive",
+      "slug": "googledrive"
+    },
+    {
+      "name": "Google Photos",
+      "slug": "googlephotos"
+    },
+    {
+      "name": "Google Maps",
+      "slug": "googlemaps"
+    },
+    {
+      "name": "Google Meet",
+      "slug": "googlemeet"
+    },
+    {
+      "name": "Gmail",
+      "slug": "gmail"
+    },
+    {
+      "name": "YouTube",
+      "slug": "youtube"
+    },
+    {
+      "name": "YouTube Music",
+      "slug": "youtubemusic"
+    },
+    {
+      "name": "YouTube TV",
+      "slug": "youtubetv"
+    },
+    {
+      "name": "Apple",
+      "slug": "apple"
+    },
+    {
+      "name": "iCloud",
+      "slug": "icloud"
+    },
+    {
+      "name": "App Store",
+      "slug": "appstore"
+    },
+    {
+      "name": "Apple Music",
+      "slug": "applemusic"
+    },
+    {
+      "name": "Apple TV",
+      "slug": "appletv"
+    },
+    {
+      "name": "Netflix",
+      "slug": "netflix"
+    },
+    {
+      "name": "Max",
+      "slug": "max"
+    },
+    {
+      "name": "HBO",
+      "slug": "hbo"
+    },
+    {
+      "name": "HBO Max",
+      "slug": "hbomax"
+    },
+    {
+      "name": "Spotify",
+      "slug": "spotify"
+    },
+    {
+      "name": "SoundCloud",
+      "slug": "soundcloud"
+    },
+    {
+      "name": "Twitch",
+      "slug": "twitch"
+    },
+    {
+      "name": "Vimeo",
+      "slug": "vimeo"
+    },
+    {
+      "name": "Dailymotion",
+      "slug": "dailymotion"
+    },
+    {
+      "name": "Bilibili",
+      "slug": "bilibili"
+    },
+    {
+      "name": "TikTok",
+      "slug": "tiktok"
+    },
+    {
+      "name": "Telegram",
+      "slug": "telegram"
+    },
+    {
+      "name": "WhatsApp",
+      "slug": "whatsapp"
+    },
+    {
+      "name": "Signal",
+      "slug": "signal"
+    },
+    {
+      "name": "Discord",
+      "slug": "discord"
+    },
+    {
+      "name": "LINE",
+      "slug": "line"
+    },
+    {
+      "name": "Viber",
+      "slug": "viber"
+    },
+    {
+      "name": "WeChat",
+      "slug": "wechat"
+    },
+    {
+      "name": "QQ",
+      "slug": "qq"
+    },
+    {
+      "name": "X",
+      "slug": "x"
+    },
+    {
+      "name": "Facebook",
+      "slug": "facebook"
+    },
+    {
+      "name": "Instagram",
+      "slug": "instagram"
+    },
+    {
+      "name": "Threads",
+      "slug": "threads"
+    },
+    {
+      "name": "Reddit",
+      "slug": "reddit"
+    },
+    {
+      "name": "Bluesky",
+      "slug": "bluesky"
+    },
+    {
+      "name": "Mastodon",
+      "slug": "mastodon"
+    },
+    {
+      "name": "VK",
+      "slug": "vk"
+    },
+    {
+      "name": "Snapchat",
+      "slug": "snapchat"
+    },
+    {
+      "name": "Pinterest",
+      "slug": "pinterest"
+    },
+    {
+      "name": "Xiaohongshu",
+      "slug": "xiaohongshu"
+    },
+    {
+      "name": "Douban",
+      "slug": "douban"
+    },
+    {
+      "name": "GitHub",
+      "slug": "github"
+    },
+    {
+      "name": "GitLab",
+      "slug": "gitlab"
+    },
+    {
+      "name": "Bitbucket",
+      "slug": "bitbucket"
+    },
+    {
+      "name": "Cloudflare",
+      "slug": "cloudflare"
+    },
+    {
+      "name": "Cloudflare Workers",
+      "slug": "cloudflareworkers"
+    },
+    {
+      "name": "Cloudflare Pages",
+      "slug": "cloudflarepages"
+    },
+    {
+      "name": "Fastly",
+      "slug": "fastly"
+    },
+    {
+      "name": "Akamai",
+      "slug": "akamai"
+    },
+    {
+      "name": "DigitalOcean",
+      "slug": "digitalocean"
+    },
+    {
+      "name": "Vercel",
+      "slug": "vercel"
+    },
+    {
+      "name": "Netlify",
+      "slug": "netlify"
+    },
+    {
+      "name": "Firebase",
+      "slug": "firebase"
+    },
+    {
+      "name": "Supabase",
+      "slug": "supabase"
+    },
+    {
+      "name": "Alibaba Cloud",
+      "slug": "alibabacloud"
+    },
+    {
+      "name": "Huawei",
+      "slug": "huawei"
+    },
+    {
+      "name": "Vultr",
+      "slug": "vultr"
+    },
+    {
+      "name": "Hetzner",
+      "slug": "hetzner"
+    },
+    {
+      "name": "Yandex Cloud",
+      "slug": "yandexcloud"
+    },
+    {
+      "name": "Docker",
+      "slug": "docker"
+    },
+    {
+      "name": "Kubernetes",
+      "slug": "kubernetes"
+    },
+    {
+      "name": "NGINX",
+      "slug": "nginx"
+    },
+    {
+      "name": "Nginx Proxy Manager",
+      "slug": "nginxproxymanager"
+    },
+    {
+      "name": "Tailscale",
+      "slug": "tailscale"
+    },
+    {
+      "name": "WireGuard",
+      "slug": "wireguard"
+    },
+    {
+      "name": "OpenVPN",
+      "slug": "openvpn"
+    },
+    {
+      "name": "ZeroTier",
+      "slug": "zerotier"
+    },
+    {
+      "name": "Cisco",
+      "slug": "cisco"
+    },
+    {
+      "name": "Ubiquiti",
+      "slug": "ubiquiti"
+    },
+    {
+      "name": "MikroTik",
+      "slug": "mikrotik"
+    },
+    {
+      "name": "Fortinet",
+      "slug": "fortinet"
+    },
+    {
+      "name": "Palo Alto Networks",
+      "slug": "paloaltonetworks"
+    },
+    {
+      "name": "Cloudinary",
+      "slug": "cloudinary"
+    },
+    {
+      "name": "Dropbox",
+      "slug": "dropbox"
+    },
+    {
+      "name": "Nextcloud",
+      "slug": "nextcloud"
+    },
+    {
+      "name": "ownCloud",
+      "slug": "owncloud"
+    },
+    {
+      "name": "Proton Mail",
+      "slug": "protonmail"
+    },
+    {
+      "name": "DuckDuckGo",
+      "slug": "duckduckgo"
+    },
+    {
+      "name": "Baidu",
+      "slug": "baidu"
+    },
+    {
+      "name": "Steam",
+      "slug": "steam"
+    },
+    {
+      "name": "Epic Games",
+      "slug": "epicgames"
+    },
+    {
+      "name": "PlayStation",
+      "slug": "playstation"
+    },
+    {
+      "name": "Claude",
+      "slug": "claude"
+    },
+    {
+      "name": "Claude Code",
+      "slug": "claudecode"
+    },
+    {
+      "name": "Anthropic",
+      "slug": "anthropic"
+    },
+    {
+      "name": "Google Gemini",
+      "slug": "googlegemini"
+    },
+    {
+      "name": "DeepSeek",
+      "slug": "deepseek"
+    },
+    {
+      "name": "Perplexity",
+      "slug": "perplexity"
+    },
+    {
+      "name": "Mistral AI",
+      "slug": "mistralai"
+    },
+    {
+      "name": "Ollama",
+      "slug": "ollama"
+    },
+    {
+      "name": "Cursor",
+      "slug": "cursor"
+    },
+    {
+      "name": "Windsurf",
+      "slug": "windsurf"
+    },
+    {
+      "name": "Hugging Face",
+      "slug": "huggingface"
+    },
+    {
+      "name": "Replicate",
+      "slug": "replicate"
+    },
+    {
+      "name": "Notion",
+      "slug": "notion"
+    },
+    {
+      "name": "Figma",
+      "slug": "figma"
+    },
+    {
+      "name": "Zoom",
+      "slug": "zoom"
+    },
+    {
+      "name": "Asana",
+      "slug": "asana"
+    },
+    {
+      "name": "Trello",
+      "slug": "trello"
+    },
+    {
+      "name": "Linear",
+      "slug": "linear"
+    },
+    {
+      "name": "Jira",
+      "slug": "jira"
+    }
+  ]
+}

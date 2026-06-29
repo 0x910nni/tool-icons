@@ -1,1 +1,430 @@
-{"name":"Pod042 Network Service Icons","description":"Network-service oriented brand icons for Surge policy groups. Source: Simple Icons CDN. URLs return SVG icons sized to 144px.","icons":[{"name":"Google","url":"https://cdn.simpleicons.org/google?size=144"},{"name":"Google Cloud","url":"https://cdn.simpleicons.org/googlecloud?size=144"},{"name":"Google Drive","url":"https://cdn.simpleicons.org/googledrive?size=144"},{"name":"Google Photos","url":"https://cdn.simpleicons.org/googlephotos?size=144"},{"name":"Google Maps","url":"https://cdn.simpleicons.org/googlemaps?size=144"},{"name":"Google Meet","url":"https://cdn.simpleicons.org/googlemeet?size=144"},{"name":"Gmail","url":"https://cdn.simpleicons.org/gmail?size=144"},{"name":"YouTube","url":"https://cdn.simpleicons.org/youtube?size=144"},{"name":"YouTube Music","url":"https://cdn.simpleicons.org/youtubemusic?size=144"},{"name":"YouTube TV","url":"https://cdn.simpleicons.org/youtubetv?size=144"},{"name":"Apple","url":"https://cdn.simpleicons.org/apple?size=144"},{"name":"iCloud","url":"https://cdn.simpleicons.org/icloud?size=144"},{"name":"App Store","url":"https://cdn.simpleicons.org/appstore?size=144"},{"name":"Apple Music","url":"https://cdn.simpleicons.org/applemusic?size=144"},{"name":"Apple TV","url":"https://cdn.simpleicons.org/appletv?size=144"},{"name":"Netflix","url":"https://cdn.simpleicons.org/netflix?size=144"},{"name":"Max","url":"https://cdn.simpleicons.org/max?size=144"},{"name":"HBO","url":"https://cdn.simpleicons.org/hbo?size=144"},{"name":"HBO Max","url":"https://cdn.simpleicons.org/hbomax?size=144"},{"name":"Spotify","url":"https://cdn.simpleicons.org/spotify?size=144"},{"name":"SoundCloud","url":"https://cdn.simpleicons.org/soundcloud?size=144"},{"name":"Twitch","url":"https://cdn.simpleicons.org/twitch?size=144"},{"name":"Vimeo","url":"https://cdn.simpleicons.org/vimeo?size=144"},{"name":"Dailymotion","url":"https://cdn.simpleicons.org/dailymotion?size=144"},{"name":"Bilibili","url":"https://cdn.simpleicons.org/bilibili?size=144"},{"name":"TikTok","url":"https://cdn.simpleicons.org/tiktok?size=144"},{"name":"Telegram","url":"https://cdn.simpleicons.org/telegram?size=144"},{"name":"WhatsApp","url":"https://cdn.simpleicons.org/whatsapp?size=144"},{"name":"Signal","url":"https://cdn.simpleicons.org/signal?size=144"},{"name":"Discord","url":"https://cdn.simpleicons.org/discord?size=144"},{"name":"LINE","url":"https://cdn.simpleicons.org/line?size=144"},{"name":"Viber","url":"https://cdn.simpleicons.org/viber?size=144"},{"name":"WeChat","url":"https://cdn.simpleicons.org/wechat?size=144"},{"name":"QQ","url":"https://cdn.simpleicons.org/qq?size=144"},{"name":"X","url":"https://cdn.simpleicons.org/x?size=144"},{"name":"Facebook","url":"https://cdn.simpleicons.org/facebook?size=144"},{"name":"Instagram","url":"https://cdn.simpleicons.org/instagram?size=144"},{"name":"Threads","url":"https://cdn.simpleicons.org/threads?size=144"},{"name":"Reddit","url":"https://cdn.simpleicons.org/reddit?size=144"},{"name":"Bluesky","url":"https://cdn.simpleicons.org/bluesky?size=144"},{"name":"Mastodon","url":"https://cdn.simpleicons.org/mastodon?size=144"},{"name":"VK","url":"https://cdn.simpleicons.org/vk?size=144"},{"name":"Snapchat","url":"https://cdn.simpleicons.org/snapchat?size=144"},{"name":"Pinterest","url":"https://cdn.simpleicons.org/pinterest?size=144"},{"name":"Xiaohongshu","url":"https://cdn.simpleicons.org/xiaohongshu?size=144"},{"name":"Douban","url":"https://cdn.simpleicons.org/douban?size=144"},{"name":"GitHub","url":"https://cdn.simpleicons.org/github?size=144"},{"name":"GitLab","url":"https://cdn.simpleicons.org/gitlab?size=144"},{"name":"Bitbucket","url":"https://cdn.simpleicons.org/bitbucket?size=144"},{"name":"Cloudflare","url":"https://cdn.simpleicons.org/cloudflare?size=144"},{"name":"Cloudflare Workers","url":"https://cdn.simpleicons.org/cloudflareworkers?size=144"},{"name":"Cloudflare Pages","url":"https://cdn.simpleicons.org/cloudflarepages?size=144"},{"name":"Fastly","url":"https://cdn.simpleicons.org/fastly?size=144"},{"name":"Akamai","url":"https://cdn.simpleicons.org/akamai?size=144"},{"name":"DigitalOcean","url":"https://cdn.simpleicons.org/digitalocean?size=144"},{"name":"Vercel","url":"https://cdn.simpleicons.org/vercel?size=144"},{"name":"Netlify","url":"https://cdn.simpleicons.org/netlify?size=144"},{"name":"Firebase","url":"https://cdn.simpleicons.org/firebase?size=144"},{"name":"Supabase","url":"https://cdn.simpleicons.org/supabase?size=144"},{"name":"Alibaba Cloud","url":"https://cdn.simpleicons.org/alibabacloud?size=144"},{"name":"Huawei","url":"https://cdn.simpleicons.org/huawei?size=144"},{"name":"Vultr","url":"https://cdn.simpleicons.org/vultr?size=144"},{"name":"Hetzner","url":"https://cdn.simpleicons.org/hetzner?size=144"},{"name":"Yandex Cloud","url":"https://cdn.simpleicons.org/yandexcloud?size=144"},{"name":"Docker","url":"https://cdn.simpleicons.org/docker?size=144"},{"name":"Kubernetes","url":"https://cdn.simpleicons.org/kubernetes?size=144"},{"name":"NGINX","url":"https://cdn.simpleicons.org/nginx?size=144"},{"name":"Nginx Proxy Manager","url":"https://cdn.simpleicons.org/nginxproxymanager?size=144"},{"name":"Tailscale","url":"https://cdn.simpleicons.org/tailscale?size=144"},{"name":"WireGuard","url":"https://cdn.simpleicons.org/wireguard?size=144"},{"name":"OpenVPN","url":"https://cdn.simpleicons.org/openvpn?size=144"},{"name":"ZeroTier","url":"https://cdn.simpleicons.org/zerotier?size=144"},{"name":"Cisco","url":"https://cdn.simpleicons.org/cisco?size=144"},{"name":"Ubiquiti","url":"https://cdn.simpleicons.org/ubiquiti?size=144"},{"name":"MikroTik","url":"https://cdn.simpleicons.org/mikrotik?size=144"},{"name":"Fortinet","url":"https://cdn.simpleicons.org/fortinet?size=144"},{"name":"Palo Alto Networks","url":"https://cdn.simpleicons.org/paloaltonetworks?size=144"},{"name":"Cloudinary","url":"https://cdn.simpleicons.org/cloudinary?size=144"},{"name":"Dropbox","url":"https://cdn.simpleicons.org/dropbox?size=144"},{"name":"Nextcloud","url":"https://cdn.simpleicons.org/nextcloud?size=144"},{"name":"ownCloud","url":"https://cdn.simpleicons.org/owncloud?size=144"},{"name":"Proton Mail","url":"https://cdn.simpleicons.org/protonmail?size=144"},{"name":"DuckDuckGo","url":"https://cdn.simpleicons.org/duckduckgo?size=144"},{"name":"Baidu","url":"https://cdn.simpleicons.org/baidu?size=144"},{"name":"Steam","url":"https://cdn.simpleicons.org/steam?size=144"},{"name":"Epic Games","url":"https://cdn.simpleicons.org/epicgames?size=144"},{"name":"PlayStation","url":"https://cdn.simpleicons.org/playstation?size=144"},{"name":"Claude","url":"https://cdn.simpleicons.org/claude?size=144"},{"name":"Claude Code","url":"https://cdn.simpleicons.org/claudecode?size=144"},{"name":"Anthropic","url":"https://cdn.simpleicons.org/anthropic?size=144"},{"name":"Google Gemini","url":"https://cdn.simpleicons.org/googlegemini?size=144"},{"name":"DeepSeek","url":"https://cdn.simpleicons.org/deepseek?size=144"},{"name":"Perplexity","url":"https://cdn.simpleicons.org/perplexity?size=144"},{"name":"Mistral AI","url":"https://cdn.simpleicons.org/mistralai?size=144"},{"name":"Ollama","url":"https://cdn.simpleicons.org/ollama?size=144"},{"name":"Cursor","url":"https://cdn.simpleicons.org/cursor?size=144"},{"name":"Windsurf","url":"https://cdn.simpleicons.org/windsurf?size=144"},{"name":"Hugging Face","url":"https://cdn.simpleicons.org/huggingface?size=144"},{"name":"Replicate","url":"https://cdn.simpleicons.org/replicate?size=144"},{"name":"Notion","url":"https://cdn.simpleicons.org/notion?size=144"},{"name":"Figma","url":"https://cdn.simpleicons.org/figma?size=144"},{"name":"Zoom","url":"https://cdn.simpleicons.org/zoom?size=144"},{"name":"Asana","url":"https://cdn.simpleicons.org/asana?size=144"},{"name":"Trello","url":"https://cdn.simpleicons.org/trello?size=144"},{"name":"Linear","url":"https://cdn.simpleicons.org/linear?size=144"},{"name":"Jira","url":"https://cdn.simpleicons.org/jira?size=144"}]}
+{
+  "name": "Pod042 Network Service Icons",
+  "description": "Network-service oriented brand icons for Surge policy groups. PNG icons generated from Simple Icons.",
+  "icons": [
+    {
+      "name": "Google",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/google.png"
+    },
+    {
+      "name": "Google Cloud",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/googlecloud.png"
+    },
+    {
+      "name": "Google Drive",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/googledrive.png"
+    },
+    {
+      "name": "Google Photos",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/googlephotos.png"
+    },
+    {
+      "name": "Google Maps",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/googlemaps.png"
+    },
+    {
+      "name": "Google Meet",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/googlemeet.png"
+    },
+    {
+      "name": "Gmail",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/gmail.png"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/youtube.png"
+    },
+    {
+      "name": "YouTube Music",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/youtubemusic.png"
+    },
+    {
+      "name": "YouTube TV",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/youtubetv.png"
+    },
+    {
+      "name": "Apple",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/apple.png"
+    },
+    {
+      "name": "iCloud",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/icloud.png"
+    },
+    {
+      "name": "App Store",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/appstore.png"
+    },
+    {
+      "name": "Apple Music",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/applemusic.png"
+    },
+    {
+      "name": "Apple TV",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/appletv.png"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/netflix.png"
+    },
+    {
+      "name": "Max",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/max.png"
+    },
+    {
+      "name": "HBO",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/hbo.png"
+    },
+    {
+      "name": "HBO Max",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/hbomax.png"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/spotify.png"
+    },
+    {
+      "name": "SoundCloud",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/soundcloud.png"
+    },
+    {
+      "name": "Twitch",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/twitch.png"
+    },
+    {
+      "name": "Vimeo",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/vimeo.png"
+    },
+    {
+      "name": "Dailymotion",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/dailymotion.png"
+    },
+    {
+      "name": "Bilibili",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/bilibili.png"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/tiktok.png"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/telegram.png"
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/whatsapp.png"
+    },
+    {
+      "name": "Signal",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/signal.png"
+    },
+    {
+      "name": "Discord",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/discord.png"
+    },
+    {
+      "name": "LINE",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/line.png"
+    },
+    {
+      "name": "Viber",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/viber.png"
+    },
+    {
+      "name": "WeChat",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/wechat.png"
+    },
+    {
+      "name": "QQ",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/qq.png"
+    },
+    {
+      "name": "X",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/x.png"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/facebook.png"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/instagram.png"
+    },
+    {
+      "name": "Threads",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/threads.png"
+    },
+    {
+      "name": "Reddit",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/reddit.png"
+    },
+    {
+      "name": "Bluesky",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/bluesky.png"
+    },
+    {
+      "name": "Mastodon",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/mastodon.png"
+    },
+    {
+      "name": "VK",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/vk.png"
+    },
+    {
+      "name": "Snapchat",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/snapchat.png"
+    },
+    {
+      "name": "Pinterest",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/pinterest.png"
+    },
+    {
+      "name": "Xiaohongshu",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/xiaohongshu.png"
+    },
+    {
+      "name": "Douban",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/douban.png"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/github.png"
+    },
+    {
+      "name": "GitLab",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/gitlab.png"
+    },
+    {
+      "name": "Bitbucket",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/bitbucket.png"
+    },
+    {
+      "name": "Cloudflare",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/cloudflare.png"
+    },
+    {
+      "name": "Cloudflare Workers",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/cloudflareworkers.png"
+    },
+    {
+      "name": "Cloudflare Pages",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/cloudflarepages.png"
+    },
+    {
+      "name": "Fastly",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/fastly.png"
+    },
+    {
+      "name": "Akamai",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/akamai.png"
+    },
+    {
+      "name": "DigitalOcean",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/digitalocean.png"
+    },
+    {
+      "name": "Vercel",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/vercel.png"
+    },
+    {
+      "name": "Netlify",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/netlify.png"
+    },
+    {
+      "name": "Firebase",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/firebase.png"
+    },
+    {
+      "name": "Supabase",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/supabase.png"
+    },
+    {
+      "name": "Alibaba Cloud",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/alibabacloud.png"
+    },
+    {
+      "name": "Huawei",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/huawei.png"
+    },
+    {
+      "name": "Vultr",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/vultr.png"
+    },
+    {
+      "name": "Hetzner",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/hetzner.png"
+    },
+    {
+      "name": "Yandex Cloud",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/yandexcloud.png"
+    },
+    {
+      "name": "Docker",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/docker.png"
+    },
+    {
+      "name": "Kubernetes",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/kubernetes.png"
+    },
+    {
+      "name": "NGINX",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/nginx.png"
+    },
+    {
+      "name": "Nginx Proxy Manager",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/nginxproxymanager.png"
+    },
+    {
+      "name": "Tailscale",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/tailscale.png"
+    },
+    {
+      "name": "WireGuard",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/wireguard.png"
+    },
+    {
+      "name": "OpenVPN",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/openvpn.png"
+    },
+    {
+      "name": "ZeroTier",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/zerotier.png"
+    },
+    {
+      "name": "Cisco",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/cisco.png"
+    },
+    {
+      "name": "Ubiquiti",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/ubiquiti.png"
+    },
+    {
+      "name": "MikroTik",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/mikrotik.png"
+    },
+    {
+      "name": "Fortinet",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/fortinet.png"
+    },
+    {
+      "name": "Palo Alto Networks",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/paloaltonetworks.png"
+    },
+    {
+      "name": "Cloudinary",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/cloudinary.png"
+    },
+    {
+      "name": "Dropbox",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/dropbox.png"
+    },
+    {
+      "name": "Nextcloud",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/nextcloud.png"
+    },
+    {
+      "name": "ownCloud",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/owncloud.png"
+    },
+    {
+      "name": "Proton Mail",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/protonmail.png"
+    },
+    {
+      "name": "DuckDuckGo",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/duckduckgo.png"
+    },
+    {
+      "name": "Baidu",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/baidu.png"
+    },
+    {
+      "name": "Steam",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/steam.png"
+    },
+    {
+      "name": "Epic Games",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/epicgames.png"
+    },
+    {
+      "name": "PlayStation",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/playstation.png"
+    },
+    {
+      "name": "Claude",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/claude.png"
+    },
+    {
+      "name": "Claude Code",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/claudecode.png"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/anthropic.png"
+    },
+    {
+      "name": "Google Gemini",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/googlegemini.png"
+    },
+    {
+      "name": "DeepSeek",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/deepseek.png"
+    },
+    {
+      "name": "Perplexity",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/perplexity.png"
+    },
+    {
+      "name": "Mistral AI",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/mistralai.png"
+    },
+    {
+      "name": "Ollama",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/ollama.png"
+    },
+    {
+      "name": "Cursor",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/cursor.png"
+    },
+    {
+      "name": "Windsurf",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/windsurf.png"
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/huggingface.png"
+    },
+    {
+      "name": "Replicate",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/replicate.png"
+    },
+    {
+      "name": "Notion",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/notion.png"
+    },
+    {
+      "name": "Figma",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/figma.png"
+    },
+    {
+      "name": "Zoom",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/zoom.png"
+    },
+    {
+      "name": "Asana",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/asana.png"
+    },
+    {
+      "name": "Trello",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/trello.png"
+    },
+    {
+      "name": "Linear",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/linear.png"
+    },
+    {
+      "name": "Jira",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/jira.png"
+    }
+  ]
+}

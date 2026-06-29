@@ -1,0 +1,73 @@
+{
+  "icons": [
+    {
+      "name": "ChatGPT White",
+      "file": "chatgpt-white",
+      "color": "white",
+      "sourceUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/openai.svg"
+    },
+    {
+      "name": "Grok White",
+      "file": "grok-white",
+      "color": "white",
+      "sourceUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/grok.svg"
+    },
+    {
+      "name": "TradingView White",
+      "slug": "tradingview",
+      "file": "tradingview-white",
+      "color": "white"
+    },
+    {
+      "name": "Claude White",
+      "slug": "claude",
+      "file": "claude-white",
+      "color": "white"
+    },
+    {
+      "name": "Steam White",
+      "slug": "steam",
+      "file": "steam-white",
+      "color": "white"
+    },
+    {
+      "name": "Netflix White",
+      "slug": "netflix",
+      "file": "netflix-white",
+      "color": "white"
+    },
+    {
+      "name": "Starlink White",
+      "file": "starlink-white",
+      "color": "white",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Starlink_Logo.svg"
+    },
+    {
+      "name": "X White",
+      "slug": "x",
+      "file": "x-white",
+      "color": "white"
+    },
+    {
+      "name": "HBO White",
+      "slug": "hbo",
+      "file": "hbo-white",
+      "color": "white"
+    },
+    {
+      "name": "MetaMask",
+      "file": "metamask",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg"
+    },
+    {
+      "name": "Meta",
+      "file": "meta",
+      "sourceUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/meta-color.svg"
+    },
+    {
+      "name": "Gemini",
+      "file": "gemini",
+      "sourceUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/gemini-color.svg"
+    }
+  ]
+}

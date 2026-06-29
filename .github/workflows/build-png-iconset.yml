@@ -1,0 +1,47 @@
+name: Build PNG icon set
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - iconset.json
+      - source-icons.json
+      - scripts/build-png-iconset.mjs
+      - .github/workflows/build-png-iconset.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install converter
+        run: npm install --no-audit --no-fund sharp
+
+      - name: Build PNG icons
+        run: node scripts/build-png-iconset.mjs
+
+      - name: Commit generated icons
+        run: |
+          if [ -z "$(git status --porcelain icons iconset.json source-icons.json)" ]; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add icons iconset.json source-icons.json
+          git commit -m "Build PNG Surge icon set"
+          git push

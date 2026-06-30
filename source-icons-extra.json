@@ -38,7 +38,7 @@
     },
     {
       "name": "Starlink White",
-      "file": "starlink-white",
+      "file": "starlink-2024-white",
       "color": "white",
       "svgPath": "custom-icons/starlink-2024.svg"
     },
@@ -71,7 +71,7 @@
     },
     {
       "name": "Starlink Black",
-      "file": "starlink-black",
+      "file": "starlink-2024-black",
       "color": "black",
       "svgPath": "custom-icons/starlink-2024.svg"
     },

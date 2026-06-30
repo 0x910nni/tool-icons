@@ -191,6 +191,7 @@ if (sourceIcons.length === 0) {
   throw new Error('No source icons found.');
 }
 
+await fs.rm(outputDir, { recursive: true, force: true });
 await fs.mkdir(outputDir, { recursive: true });
 
 const builtIcons = [];

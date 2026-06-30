@@ -115,15 +115,21 @@ function applySvgSize(svg) {
   });
 }
 
-function applySvgColor(svg, color) {
+function forceSvgColor(svg, color) {
   if (!color) return svg;
-  if (svg.includes('currentColor')) {
-    return svg.replaceAll('currentColor', color);
+
+  let recolored = svg
+    .replaceAll('currentColor', color)
+    .replace(/fill="(?!none\b)[^"]*"/gi, `fill="${color}"`)
+    .replace(/stroke="(?!none\b)[^"]*"/gi, `stroke="${color}"`)
+    .replace(/fill:\s*(?!none\b)[^;"']+/gi, `fill:${color}`)
+    .replace(/stroke:\s*(?!none\b)[^;"']+/gi, `stroke:${color}`);
+
+  if (/^<svg\s/i.test(recolored) && !/^<svg\s[^>]*\bfill=/i.test(recolored)) {
+    recolored = recolored.replace('<svg ', `<svg fill="${color}" `);
   }
-  if (/^<svg\s/i.test(svg) && !/^<svg\s[^>]*\bfill=/i.test(svg)) {
-    return svg.replace('<svg ', `<svg fill="${color}" `);
-  }
-  return svg;
+
+  return recolored;
 }
 
 async function fetchText(url) {
@@ -164,19 +170,13 @@ async function buildIcon(icon) {
   const { svg, color } = await svgForIcon(icon);
   const fileBase = fileBaseForIcon(icon);
   const outputPath = path.join(outputDir, `${fileBase}.png`);
-  const preparedSvg = applySvgSize(applySvgColor(svg, color));
+  const preparedSvg = applySvgSize(forceSvgColor(svg, color));
 
-  let image = sharp(Buffer.from(preparedSvg), { density: 384 })
+  await sharp(Buffer.from(preparedSvg), { density: 384 })
     .resize(144, 144, {
       fit: 'contain',
       background: { r: 0, g: 0, b: 0, alpha: 0 },
-    });
-
-  if (color && !preparedSvg.includes(color)) {
-    image = image.tint(color);
-  }
-
-  await image
+    })
     .png({ compressionLevel: 9, adaptiveFiltering: true })
     .toFile(outputPath);
 

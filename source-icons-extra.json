@@ -40,7 +40,7 @@
       "name": "Starlink White",
       "file": "starlink-white",
       "color": "white",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Starlink_Logo.svg"
+      "svgPath": "custom-icons/starlink-2024.svg"
     },
     {
       "name": "X White",
@@ -68,6 +68,18 @@
       "name": "Gemini",
       "file": "gemini",
       "sourceUrl": "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-svg/icons/gemini-color.svg"
+    },
+    {
+      "name": "Starlink Black",
+      "file": "starlink-black",
+      "color": "black",
+      "svgPath": "custom-icons/starlink-2024.svg"
+    },
+    {
+      "name": "Apple Music White",
+      "slug": "applemusic",
+      "file": "applemusic-white",
+      "color": "white"
     }
   ]
 }

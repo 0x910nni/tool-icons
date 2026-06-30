@@ -473,6 +473,14 @@
     {
       "name": "Gemini",
       "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/gemini.png"
+    },
+    {
+      "name": "Starlink Black",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/starlink-black.png"
+    },
+    {
+      "name": "Apple Music White",
+      "url": "https://raw.githubusercontent.com/0x910nni/tool-icons/main/icons/applemusic-white.png"
     }
   ]
 }
